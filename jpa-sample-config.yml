@@ -1,5 +1,5 @@
 server:
-  port: 9093
+  port: 9090
 
 eureka:
   instance:
@@ -15,10 +15,10 @@ eureka:
 
 spring:
     datasource:
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: org.postgresql.Driver
         password: '1234'
-        platform: mysql
-        url: jdbc:mysql://localhost/delivery-order?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        platform: postgres
+        url: jdbc:postgresql://localhost/jpa?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
